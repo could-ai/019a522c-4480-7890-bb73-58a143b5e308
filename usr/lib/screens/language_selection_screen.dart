@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:couldai_user_app/screens/role_selection_screen.dart';
 
 class LanguageSelectionScreen extends StatelessWidget {
   const LanguageSelectionScreen({super.key});
@@ -23,10 +24,15 @@ class LanguageSelectionScreen extends StatelessWidget {
               icon: const Icon(Icons.language),
               label: const Text('English'),
               onPressed: () {
-                // TODO: Implement navigation and save language preference
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => const RoleSelectionScreen(),
+                  ),
+                );
               },
               style: ElevatedButton.styleFrom(
-                padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 15),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 40, vertical: 15),
                 textStyle: const TextStyle(fontSize: 18),
               ),
             ),
@@ -35,10 +41,15 @@ class LanguageSelectionScreen extends StatelessWidget {
               icon: const Icon(Icons.language),
               label: const Text('हिंदी'),
               onPressed: () {
-                // TODO: Implement navigation and save language preference
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => const RoleSelectionScreen(),
+                  ),
+                );
               },
               style: ElevatedButton.styleFrom(
-                padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 15),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 40, vertical: 15),
                 textStyle: const TextStyle(fontSize: 18),
               ),
             ),
